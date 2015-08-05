@@ -10,4 +10,5 @@ $revision = @file_get_contents(APPDIR . DIRECTORY_SEPARATOR . 'REVISION');
 
 
 echo '<h1>' . $config->application . '</h1>';
-echo '<pre>Revision: ' . $revision . '</pre>';
+echo '<pre>Revision: ' . $revision . PHP_EOL
+    . 'Server: ' . $_SERVER['SERVER_ADDR'] . '</pre>';
